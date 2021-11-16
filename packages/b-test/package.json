@@ -12,9 +12,9 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
@@ -33,7 +33,7 @@
     "cross-env": "^7.0.3",
     "a-test": "^0.1.10",
     "qrcode.react": "^1.0.1",
-    "react": "^16.12.0 || ^17.0.0",
+    "react": "17.x",
     "react-copy-to-clipboard": "^5.0.4",
     "react-dnd": "^14.0.4",
     "react-dnd-html5-backend": "^14.0.2",
@@ -65,7 +65,9 @@
   "author": "liufangfei <liufangfei@441495408.com>",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "lib",
+    "es"
   ],
   "publishConfig": {
     "registry": "http://verdaccio.360shop.cc/"

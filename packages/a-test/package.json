@@ -1,6 +1,6 @@
 {
   "name": "a-test",
-  "version": "0.1.10",
+  "version": "0.1.12",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -12,9 +12,9 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
@@ -32,11 +32,14 @@
     "cos-js-sdk-v5": "^1.2.18",
     "cross-env": "^7.0.3",
     "qrcode.react": "^1.0.1",
-    "react": "^16.12.0 || ^17.0.0",
+    "react": "17.x",
     "react-copy-to-clipboard": "^5.0.4",
     "react-dnd": "^14.0.4",
     "react-dnd-html5-backend": "^14.0.2",
     "umi-request": "^1.4.0"
+  },
+  "peerDependencies": {
+    "react": "17.x"
   },
   "devDependencies": {
     "@types/js-md5": "^0.4.3",
@@ -56,6 +59,8 @@
   },
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "lib",
+    "es"
   ]
 }
