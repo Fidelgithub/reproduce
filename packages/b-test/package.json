@@ -64,6 +64,9 @@
   ],
   "author": "liufangfei <liufangfei@441495408.com>",
   "license": "MIT",
+  "sideEffects": [
+    "**/*.less"
+  ],
   "files": [
     "dist",
     "lib",

@@ -58,6 +58,9 @@
     "yorkie": "^2.0.0"
   },
   "license": "MIT",
+  "sideEffects": [
+    "**/*.less"
+  ],
   "files": [
     "dist",
     "lib",
